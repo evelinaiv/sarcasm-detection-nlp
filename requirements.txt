@@ -1,9 +1,0 @@
-fastapi
-uvicorn[standard]
-transformers
-torch
-datasets
-scikit-learn
-numpy
-pandas
-requests
