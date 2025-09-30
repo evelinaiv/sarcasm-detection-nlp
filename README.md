@@ -1,9 +1,9 @@
 # An Investigation of Deep Learning Approaches in Natural Language Processing (NLP)  for Sarcasm Detection in Web-Based Text: Toward the Development of a Real-Time Browser Extension
-## 📌 Project Overview
+##  Project Overview
 
 This project investigates a range of deep learning approaches in **Natural Language Processing (NLP)** for the task of sarcasm detection in web-based text, with the ultimate goal of developing a **real-time browser extension** capable of identifying sarcastic content.
 
-### 🔑 Key Highlights
+###  Key Highlights
 - Built a **large, balanced multi-domain dataset** (~950,000 cleaned examples) by combining Reddit, Twitter, and news headlines.  
 - Implemented and compared models:
   - **Classical baselines**: Logistic Regression, Support Vector Machines  
@@ -18,12 +18,12 @@ This project investigates a range of deep learning approaches in **Natural Langu
   - User feedback collection (thumbs up/down)  
   - Continuous improvement loop for retraining the model  
 
-### 📂 Repository Contents
-- 📁 **Data preprocessing and cleaning scripts**  
-- 📁 **Model training and evaluation pipelines**  
-- 📊 **Results and comparison tables** across classical ML, deep learning, and transformer models  
-- ⚙️ **Deployment code** for the FastAPI backend  
-- 🌐 **Chrome extension files** (HTML, CSS, JavaScript)  
+###  Repository Contents
+- **Data preprocessing and cleaning scripts**  
+- **Model training and evaluation pipelines**  
+- **Results and comparison tables** across classical ML, deep learning, and transformer models  
+- **Deployment code** for the FastAPI backend  
+- **Chrome extension files** (HTML, CSS, JavaScript)  
 
 ---
 
