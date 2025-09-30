@@ -1,8 +1,3 @@
-Here’s the **GitHub-ready version** of your README — fully cleaned, Markdown-formatted, and structured for professional presentation in your repo:
-
----
-
-```markdown
 # An Investigation of Deep Learning Approaches in NLP for Sarcasm Detection  
 **Toward the Development of a Real-Time Browser Extension**
 
