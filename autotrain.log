@@ -1,0 +1,9 @@
+/bin/zsh: can't open input file: /Users/evelinaivanova/sarcasm-api/run_autotrain.sh
+/bin/zsh: can't open input file: /Users/evelinaivanova/sarcasm-api/run_autotrain.sh
+/bin/zsh: can't open input file: /Users/evelinaivanova/sarcasm-api/run_autotrain.sh
+[autotrain] total=2, last_count=0, last_time=1970-01-01T00:00:00
+[autotrain] criteria not met — skipping.
+[autotrain] total=2, last_count=0, last_time=1970-01-01T00:00:00
+[autotrain] criteria not met — skipping.
+[autotrain] total=2, last_count=0, last_time=1970-01-01T00:00:00
+[autotrain] criteria not met — skipping.
