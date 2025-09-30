@@ -58,15 +58,7 @@ Three public datasets were combined:
 
 **Instructions:**  
 1. Download datasets from the original sources.  
-2. Place them in:  
-```
-
-data/raw/
-├── reddit.csv
-├── twitter.csv
-└── news.csv
-
-````
+2. Place them in notebooks
 3. Run the preprocessing notebooks to generate the cleaned dataset (`df_filtered.csv`), which is used for transformer training.  
 
 ---
