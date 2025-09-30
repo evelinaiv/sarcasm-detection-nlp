@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SarcQuest</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="card">
+
+    <!-- speaker icon -->
+	<button id="muteBtn" class="icon-btn" aria-pressed="false" title="Toggle sound">🔊</button>
+
+    <!-- Logo -->
+    <div class="logo">
+      <!-- crossed helmets with faces -->
+	  <img class="logo-svg" src="logo_knights.png" alt="SarcQuest logo" />
+    </div>
+
+    <!-- Title & subtitle -->
+    <h1 class="title">SarcQuest</h1>
+    <p class="subtitle">Your sarcastic need<br/>is our noble deed.</p>
+
+    <!-- Buttons -->
+    <div class="actions">
+      <button id="scanBtn" class="cta">
+        <img class="icon-img" src="sword.png" alt="" />
+        <span>Scan page</span>
+      </button>
+
+      <button id="doneBtn" class="cta cta-secondary">
+        <img class="icon-img" src="cup.png" alt="" />
+        <span>Done</span>
+      </button>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader">
+      <div class="horsewrap" aria-hidden="true">
+        <!-- knight on horse -->
+        <!-- knight on horse -->
+		<img class="horse" src="horse.png" alt="Knight on horse" />
+      </div>
+      <div class="loadline">
+    <!-- <span class="load-label">Loading...</span> -->
+        <span id="progressPct" class="load-pct">0%</span>
+        <div class="bar"><div id="barFill" class="fill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

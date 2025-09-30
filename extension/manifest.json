@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "SarcQuest",
+  "short_name": "SarcQuest",
+  "version": "1.0",
+  "description": "Underlines sarcastic sentences using a fine-tuned model.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs", "contextMenus"],
+  "host_permissions": [
+    "<all_urls>",
+    "https://evelinaivanova-api-sarcasum.hf.space/*"
+  ],
+  "icons": {
+    "16": "logo_knights_16.png",
+    "32": "logo_knights_32.png",
+    "48": "logo_knights_48.png",
+    "128": "logo_knights_128.png"
+  },
+  "action": {
+    "default_title": "SarcQuest",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "logo_knights_16.png",
+      "32": "logo_knights_32.png"
+    }
+  },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

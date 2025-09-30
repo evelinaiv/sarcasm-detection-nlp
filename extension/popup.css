@@ -1,0 +1,192 @@
+:root{
+  --parchment:#F3E7D7;
+  --parchment-deep:#E9D8C3;
+  --ink:#43230E;
+  --title:#A54E1F;
+  --cta:#B35B24;
+  --cta-dk:#964818;
+  --cta-txt:#2b1408;
+  --edge:#D3C1A9;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  width: 388px; /* nice Chrome popup width */
+  padding: 14px;
+  background: #ece2d1;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--ink);
+}
+
+/* parchment card with double border */
+.card{
+  position: relative;
+  border-radius: 18px;
+  background: radial-gradient(120% 120% at 10% 0%, #fff 0%, var(--parchment) 40%, var(--parchment-deep) 100%);
+  padding: 16px 16px 18px;
+  box-shadow:
+    inset 0 0 0 6px #A54E1F,
+    inset 0 0 0 9px #5C4033,
+    0 0px 0 #A54E1F,
+    0 12px 24px rgba(105,72,41,.25);
+  border: 1px solid var(--edge);      /* all sides */
+  border-bottom: 10px solid #7E3D14;   /* thicker/darker bottom */
+
+}
+
+.icon{
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:#f3e7d8;  
+  border:1px solid #decfbe;
+  border-radius:10px;
+  padding:6px 8px;
+  cursor:pointer;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.5)}
+
+.icon-btn{
+  position:absolute;
+  top:14px;
+  right:10px;
+  background: transparent;
+  border: none;
+  color: #6b5a4a;
+  padding: 4px;
+  cursor: pointer;
+  opacity: .9;
+}
+.icon-btn[aria-pressed="true"]{ color:#b9a796; }
+.icon-btn:focus-visible{ outline:2px solid #8c6b4d; border-radius:8px; }
+
+.logo{ display:flex; justify-content:center; margin-top:6px; }
+.logo-svg{ width: 150px; height: auto; display:block; }
+
+.title{
+  margin: 4px 0 0;
+  text-align:center;
+  font-size: 44px;
+  line-height: 1;
+  letter-spacing:.5px;
+  color: var(--title);
+  font-weight: 800;
+  text-shadow: 0 1px 0 #fff;
+}
+.subtitle{
+  margin: 8px 0 12px;
+  text-align:center;
+  font-size: 15px;
+  line-height: 1.1;
+  color: #2c2a27;
+  font-weight: 700;
+}
+
+.actions{
+  display:flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 8px 0 10px;
+}
+
+.cta{
+  flex:1;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 14px 16px;
+  font-weight: 800;
+  font-size: 22px;
+  color: var(--cta-txt);
+  background: linear-gradient(#c96b2e, #b75e23);
+  border: 2px solid #a55422;
+  border-radius: 14px;
+  box-shadow: 0 2px 0 #7e3d14, inset 0 1px 0 rgba(255,255,255,.35);
+  cursor: pointer;
+  transition: transform .05s ease, filter .15s ease;
+}
+.cta svg{ fill:#e3a567; }
+.cta:active{ transform: translateY(1px); box-shadow: 0 1px 0 #7e3d14, inset 0 1px 0 rgba(255,255,255,.35); }
+
+.cta-secondary{
+  background: linear-gradient(#bd6a2a, #a9551e);
+}
+
+.loader{
+  display:flex;
+  align-items:flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.horsewrap{
+  width: 80px;
+  height: 60px;
+  display:flex;
+  align-items:flex-end;
+}
+/* keep your existing keyframes */
+@keyframes trot{
+  0%{ transform: translateX(0) }
+  50%{ transform: translateX(4px) }
+  100%{ transform: translateX(0) }
+}
+
+/* base horse: no animation */
+.horse{
+  width: 78px;
+  height: auto;
+}
+
+/* only animate when this class is present */
+.horse--running{
+  animation: trot 1.2s linear infinite;
+}
+
+/* optional: respect system reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .horse--running{ animation: none; }
+}
+
+
+.loadline{ flex:1; }
+.load-label{
+  display:inline-block;
+  font-weight: 800;
+  margin-bottom: 6px;
+  padding-left: 2px;
+}
+.load-pct{
+  float:right;
+  font-weight: 800;
+}
+.bar{
+  clear:both;
+  height: 16px;
+  background: #e7d7c1;
+  border: 1px solid #c8b59b;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.07);
+  overflow:hidden;
+}
+.fill{
+  height:100%;
+  width:0%;
+  background: linear-gradient(90deg, #c49f7a, #b88c66);
+  box-shadow: inset 0 -2px 0 rgba(0,0,0,.12);
+  border-radius: 10px 0 0 10px;
+  transition: width .25s ease;
+}
+
+/* little skid lines bottom-left (purely decorative) */
+.card::after{
+  content:"";
+  position:absolute;
+  left:22px; bottom:10px;
+  width:52px; height:6px;
+  background: linear-gradient(90deg, rgba(0,0,0,.15) 0 30%, transparent 30% 70%, rgba(0,0,0,.08) 70% 100%);
+  border-radius: 3px;
+  filter: blur(.2px);
+  opacity:.5;
+}
