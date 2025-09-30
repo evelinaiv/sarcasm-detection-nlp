@@ -1,20 +1,31 @@
 # An Investigation of Deep Learning Approaches in Natural Language Processing (NLP)  for Sarcasm Detection in Web-Based Text: Toward the Development of a Real-Time Browser Extension
-This project investigates a range of deep learning approaches in Natural Language Processing (NLP) for the task of sarcasm detection in web-based text, with the ultimate goal of developing a real-time browser extension capable of identifying sarcastic content.
+## 📌 Project Overview
 
-The work begins with the construction of a large, balanced multi-domain dataset (~950,000 cleaned examples) by combining sources from Reddit, Twitter, and news headlines. A variety of models are implemented and compared, starting with classical baselines (Logistic Regression, Support Vector Machines) and progressing to deep learning architectures such as BiLSTM with GloVe embeddings, CNNs, and attention mechanisms. Transformer-based models (BERT, RoBERTa, DistilRoBERTa) are then evaluated for their performance, calibration, and efficiency.
+This project investigates a range of deep learning approaches in **Natural Language Processing (NLP)** for the task of sarcasm detection in web-based text, with the ultimate goal of developing a **real-time browser extension** capable of identifying sarcastic content.
 
-After extensive benchmarking, DistilRoBERTa is selected as the optimal trade-off between accuracy, speed, and model size, achieving an F1-score of ~0.77 with inference speeds suitable for real-time use. The model is deployed via a FastAPI backend and integrated into a Chrome extension called SarcQuest, which provides interactive features such as page scanning, threshold-based highlighting, user feedback collection, and a continuous improvement loop for retraining the model.
+### 🔑 Key Highlights
+- Built a **large, balanced multi-domain dataset** (~950,000 cleaned examples) by combining Reddit, Twitter, and news headlines.  
+- Implemented and compared models:
+  - **Classical baselines**: Logistic Regression, Support Vector Machines  
+  - **Deep learning**: BiLSTM with GloVe embeddings, CNNs, Attention mechanisms  
+  - **Transformers**: BERT, RoBERTa, DistilRoBERTa  
+- Conducted extensive benchmarking of performance, calibration, and efficiency.  
+- Selected **DistilRoBERTa** as the final model for its trade-off between accuracy (~0.77 F1), inference speed, and model size.  
+- Deployed the model via a **FastAPI backend** and integrated it into a Chrome extension called **SarcQuest**.  
+- Extension features include:  
+  - Page scanning and real-time sarcasm detection  
+  - Threshold-based highlighting of sarcastic sentences  
+  - User feedback collection (thumbs up/down)  
+  - Continuous improvement loop for retraining the model  
 
-The repository includes:
+### 📂 Repository Contents
+- 📁 **Data preprocessing and cleaning scripts**  
+- 📁 **Model training and evaluation pipelines**  
+- 📊 **Results and comparison tables** across classical ML, deep learning, and transformer models  
+- ⚙️ **Deployment code** for the FastAPI backend  
+- 🌐 **Chrome extension files** (HTML, CSS, JavaScript)  
 
-Data preprocessing and cleaning scripts
+---
 
-Model training and evaluation pipelines
+This project demonstrates the complete **end-to-end pipeline**: from dataset creation and model development to **practical deployment** in a user-facing application.
 
-Results and comparison tables across classical ML, deep learning, and transformer models
-
-Deployment code for the FastAPI service
-
-The full Chrome extension (HTML, CSS, JavaScript)
-
-This project demonstrates not only the application of deep learning for NLP but also the end-to-end process of taking a research problem from dataset creation and model development to practical deployment in a user-facing application.
