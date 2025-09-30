@@ -95,9 +95,11 @@ uvicorn api.app:app --reload
 
 ## Screenshots
 
-SarcQuest popup UI: <img width="373" height="420" alt="Screenshot 2025-09-30 at 14 15 27" src="https://github.com/user-attachments/assets/01ba169e-f9fd-4b9f-81d8-47b4ba314a48" />
+SarcQuest popup UI: 
+<img width="373" height="420" alt="Screenshot 2025-09-30 at 14 15 27" src="https://github.com/user-attachments/assets/01ba169e-f9fd-4b9f-81d8-47b4ba314a48" />
 
-Example webpage with sarcasm highlights: <img width="813" height="471" alt="Screenshot 2025-09-30 at 14 17 05" src="https://github.com/user-attachments/assets/40c0b2bc-99d2-4b69-8521-9706482a2bac" />
+Example webpage with sarcasm highlights: 
+<img width="813" height="471" alt="Screenshot 2025-09-30 at 14 17 05" src="https://github.com/user-attachments/assets/40c0b2bc-99d2-4b69-8521-9706482a2bac" />
 
 ---
 
@@ -116,11 +118,4 @@ Example webpage with sarcasm highlights: <img width="813" height="471" alt="Scre
 * scikit-learn
 * Dataset authors (Danofer 2017, Misra & Arora 2019, iSarcasmEval 2020, Nikesh66 2021)
 
-```
-
----
-
-✅ This version is clean, academic + applied, and matches GitHub’s professional repo style.  
-
-👉 Do you want me to also **write the one-sentence tagline (max 150 chars)** for the GitHub “Description” box that sits right under your repo title?
 ```
